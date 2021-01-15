@@ -1,0 +1,20 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: yarpclientserversingleorigin
+services:
+- name: client
+  project: Client/Client.csproj
+  bindings:
+  - port: 5001
+    protocol: https
+- name: server
+  project: Server/Server.csproj
+  bindings:
+  - port: 5003
+    protocol: https
+- name: proxy
+  project: Proxy/Proxy.csproj
