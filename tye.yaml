@@ -3,15 +3,15 @@ services:
 - name: client
   project: Client/Client.csproj
   bindings:
-  - port: 5001
+  - port: 5000
     protocol: https
 - name: server
   project: Server/Server.csproj
   bindings:
-  - port: 5003
+  - port: 5001
     protocol: https
 - name: proxy
   project: Proxy/Proxy.csproj
   bindings:
-  - port: 5005
+  - port: 5002
     protocol: https
